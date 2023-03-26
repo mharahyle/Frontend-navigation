@@ -1,18 +1,14 @@
-import React, { useState } from 'react'
-import logo from './assets/images/logo.svg';
-import './App.css';
-import Sidenav from'./components/sidenav/Sidenav';
-import './components/header/Header.css';
-import Body from './components/body/Body';
-import Hamburger from './components/menu-icon/Hamburger';
-import { FaBars } from "react-icons/fa";
+import React from "react";
+import './Header.css';
 
-function App() {
-  const [isMenuActive, activeMenu] = useState(false)
-  return (
-    
-    <div className="App" id="outer-container">
-<div>
+import logo from "../../assets/images/logo.svg";
+
+
+class Header extends React.Component {
+
+    render () {
+      return (
+        <Header>
         <div class="navbar">
         <img src={logo} height='20px' width='60px' />
    
@@ -40,11 +36,7 @@ function App() {
   <a class="dropbtn" href="#news">About</a>
 
     <div class='right-buttons'>
-    
-    <button onClick={() => activeMenu(!isMenuActive)}  class="icon">  
-    <FaBars />
-    </button>
-        
+   
     
       <button class="dropbtn">Login</button>
        
@@ -52,22 +44,17 @@ function App() {
      
       
     </div>
-</div>
-<Sidenav isMenuActive={isMenuActive}
-          onOverLayClick={() => activeMenu(!isMenuActive)}
-        >
-        
-        </Sidenav>
-        </div>
 
-      <div id="page-wrap">      
-        
-      <Body />
-      
-      </div>
+
   
-    </div>
-  );
+</div>
+        </Header>
+
+      )
+        
+
+
+    }
 }
 
-export default App;
+export default Header;

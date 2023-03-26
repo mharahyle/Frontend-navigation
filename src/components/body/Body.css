@@ -1,0 +1,253 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.image {
+    height: inherit;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.side-image {
+   
+    margin-left: 20px;   
+    max-width: 45vw;
+    max-height: 70vh;
+
+}
+.container .texts {
+    height: inherit;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+   
+    
+}
+.container .texts h1{
+font-weight: 700;
+font-size: 64px;
+color: hsl(0, 0%, 8%);
+transform: scale(0.94);
+animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+animation-iteration-count: infinite;
+}
+
+  .container .texts h1 span {
+    
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px);
+      
+  }
+
+  .container .texts h1 span:nth-child(1) {
+    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  .container .texts h1 span:nth-child(2) {
+    animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  .container .texts h1 span:nth-child(3) {
+    animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  .container .texts h1 span:nth-child(4) {
+    animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  .container .texts h1 span:nth-child(5) {
+    animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+.container .texts p{
+    font-weight: 500;
+    font-size: 14px;
+    color:hsl(0, 0%, 41%);
+    line-height: 25px;
+    }
+
+    .container .texts button {
+        padding-right:20px;
+        font-size: 12px;
+         border: none;
+         outline: none;
+         color:  hsl(0, 0%, 41%);
+         padding: 10px 18px;
+         background-color: hsl(0, 0%, 8%);
+         font-weight: 700;
+         color: hsl(0, 0%, 98%);
+         font-family: Epilogue; /* Important for vertical align on mobile phones */
+         margin-top: 7px;
+         border: 0.5px solid  hsl(0, 0%, 8%);
+         border-radius: 10px;
+         height: fit-content;
+         width: max-content;
+         cursor: pointer;
+    }
+
+
+    .container .texts button:hover {
+        padding-right:20px;
+        font-size: 12px;
+         border: none;
+         outline: none;
+         color:  hsl(0, 0%, 41%);
+         padding: 10px 18px;
+         background-color: hsl(0, 0%, 98%);
+         font-weight: 700;
+         color: hsl(0, 0%, 8%);
+         font-family: Epilogue; /* Important for vertical align on mobile phones */
+         margin-top: 7px;
+         border: 0.5px solid  hsl(0, 0%, 8%);
+         border-radius: 10px;
+         height: fit-content;
+         width: max-content;
+         cursor: pointer;
+    }
+
+    .container .texts .image-list {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 3em;
+    }
+
+
+    .container .texts .image-list .text-image{
+     padding: 15px;
+     align-self:flex-end;
+    }
+    .container .texts .image-list .extra{
+        padding: 15px;
+        align-self:flex-end;
+       }
+
+    .container .texts .image-list .text-image img{
+        height: 25px;
+        
+       }
+
+       .container .texts .image-list .extra img{
+        height: 15px;
+        
+       }
+
+       @media screen and (max-width: 600px) {
+        .container {
+            display: block;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            min-width: 64%;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .image {
+            min-height: 40vh;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 100%;
+            min-width: inherit;
+            background-image: url(../../assets/images/image-hero-mobile.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+      
+
+        .side-image {          
+            max-width: 69%;
+            max-height: inherit;
+            min-width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+          
+       }
+      
+
+
+       .container .texts h1{
+        min-width: inherit;
+        font-weight: bolder;
+        font-size: 40px;
+        color: hsl(0, 0%, 8%);
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        animation-iteration-count: infinite;
+        }
+        
+          .container .texts h1 span {
+            
+                display: inline-block;
+                opacity: 0;
+                filter: blur(4px);
+              
+          }
+        
+          .container .texts h1 span:nth-child(1) {
+            animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          .container .texts h1 span:nth-child(2) {
+            animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          .container .texts h1 span:nth-child(3) {
+            animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          .container .texts h1 span:nth-child(4) {
+            animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          .container .texts h1 span:nth-child(5) {
+            animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          @keyframes scale {
+            100% {
+              transform: scale(1);
+            }
+          }
+        
+          @keyframes fade-in {
+            100% {
+              opacity: 1;
+              filter: blur(0);
+            }
+          }
+   
+
+
+          .container .texts .image-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1em;
+            min-width: inherit;
+            max-width: inherit;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: center;
+            justify-content: center;
+        }
+    }

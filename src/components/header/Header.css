@@ -1,0 +1,542 @@
+@media screen and (min-width: 940px) {
+  .navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Epilogue;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 12px;
+    color:  hsl(0, 0%, 41%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar img{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    animation:bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform:translateY(-100%);
+      opacity: 0.3;
+    }
+    5% {
+        transform:translateY(-100%);
+        opacity: 0.4;
+    }
+    15% {
+      transform:translateY(0);
+      padding-bottom: 5px;
+    }
+    30% {
+      transform:translateY(-50%);
+    }
+
+    40% {
+      transform:translateY(0%);
+      padding-bottom: 6px;
+  }
+
+  50% {
+    transform:translateY(-30%);
+  }
+
+70% {
+    transform:translateY(0%);
+    padding-bottom: 7px;
+}
+80% {
+  transform:translateY(-15%);
+}
+90% {
+  transform:translateY(0%);
+  padding-bottom: 8px;
+}
+95% {
+  transform:translateY(-7%);
+}
+97% {
+  transform:translateY(0%);
+  padding-bottom: 9px;
+}
+99% {
+  transform:translateY(-3%);
+}
+100% {
+  transform:translateY(0);
+  padding-bottom: 9px;
+  opacity: 1;
+}
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color:  hsl(0, 0%, 41%);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: 700;
+    font-family: Epilogue; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown .dropbtn.content-link.img1,.dropdown .dropbtn.content-link.img2  {
+    background-image: url(../../assets/images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-size: 10px;
+   }
+ 
+   .dropdown .dropbtn.content-link.img1:focus-within,.dropdown .dropbtn.content-link.img2:focus-within {
+    background-image: url(../../assets/images/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-size: 10px;
+   }
+
+ 
+  .dropdown .dropbtn .icons{
+    font-size: 12px;
+    border: none;
+    outline: none;
+  vertical-align: sub;
+   /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+    top:8%;
+    height:20vh;
+  }
+  .dropdown-content.content2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+    top:8%;
+    height:15vh;
+  }
+  
+  /* Links inside the dropdown */
+
+  .dropdown-content a {
+    float: none;
+    color: hsl(0, 0%, 41%);
+    padding-left: 4.5em;
+    padding-top: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight:500;
+  }
+
+ 
+
+  .dropdown-content .content-link.img1 {
+   background-image: url(../../assets/images/icon-todo.svg);
+   background-repeat: no-repeat;
+  background-position-x: 18%;
+  background-position-y: 38%;
+  }
+  .dropdown-content .content-link.img2 {
+    background-image: url(../../assets/images/icon-calendar.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+   .dropdown-content .content-link.img3 {
+    background-image: url(../../assets/images/icon-reminders.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+   .dropdown-content .content-link.img4 {
+    background-image: url(../../assets/images/icon-planning.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+  
+  /* Add a  hsl(0, 0%, 41%) background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
+  .icons {
+    font-size: 12px;
+    padding-left: 5px;
+    text-align: center;
+  }
+
+
+
+  .navbar .right-buttons {
+    display:flex;
+    float:right;
+    margin-right:3em;
+
+  }
+  .navbar .right-buttons .dropbtn{
+   padding-right:20px;
+   font-size: 12px;
+    border: none;
+    outline: none;
+    color:  hsl(0, 0%, 41%);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: 700;
+    font-family: Epilogue; /* Important for vertical align on mobile phones */
+    margin-right: 2em;
+    cursor: pointer;
+  }
+
+  .navbar .right-buttons .bordered-button{
+    cursor: pointer;
+    padding-right:20px;
+    font-size: 12px;
+     border: none;
+     outline: none;
+     color:  hsl(0, 0%, 41%);
+     padding: 7px 15px;
+     background-color: inherit;
+     font-weight: 700;
+     font-family: Epilogue; /* Important for vertical align on mobile phones */
+     margin-top: 7px;
+     border: 0.5px solid  hsl(0, 0%, 41%);
+     border-radius: 10px;
+     height: fit-content;
+     width: max-content;
+ 
+   }
+
+   .navbar .right-buttons .icon{
+    display: none;
+   }
+
+   .sidenav {
+    display: none;
+   }
+}
+
+
+
+@media screen and (max-width: 940px) {
+  .navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Epilogue;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 12px;
+    color:  hsl(0, 0%, 41%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  .navbar img{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color:  hsl(0, 0%, 41%);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: 700;
+    font-family: Epilogue; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown .dropbtn.content-link.img1,.dropdown .dropbtn.content-link.img2  {
+    background-image: url(../../assets/images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-size: 10px;
+   }
+ 
+   .dropdown .dropbtn.content-link.img1:focus-within,.dropdown .dropbtn.content-link.img2:focus-within {
+    background-image: url(../../assets/images/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-size: 10px;
+   }
+
+ 
+  .dropdown .dropbtn .icons{
+    font-size: 12px;
+    border: none;
+    outline: none;
+  vertical-align: sub;
+   /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+    top:8%;
+    height:20vh;
+  }
+  .dropdown-content.content2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+    top:8%;
+    height:15vh;
+  }
+  
+  /* Links inside the dropdown */
+
+  .dropdown-content a {
+    float: none;
+    color: hsl(0, 0%, 41%);
+    padding-left: 4.5em;
+    padding-top: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight:500;
+  }
+
+ 
+
+  .dropdown-content .content-link.img1 {
+   background-image: url(../../assets/images/icon-todo.svg);
+   background-repeat: no-repeat;
+  background-position-x: 18%;
+  background-position-y: 38%;
+  }
+  .dropdown-content .content-link.img2 {
+    background-image: url(../../assets/images/icon-calendar.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+   .dropdown-content .content-link.img3 {
+    background-image: url(../../assets/images/icon-reminders.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+   .dropdown-content .content-link.img4 {
+    background-image: url(../../assets/images/icon-planning.svg);
+    background-repeat: no-repeat;
+   background-position-x: 18%;
+   background-position-y: 38%;
+   }
+  
+  /* Add a  hsl(0, 0%, 41%) background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
+  .icons {
+    font-size: 12px;
+    padding-left: 5px;
+    text-align: center;
+  }
+
+
+
+  .navbar .right-buttons {
+    display:flex;
+    float:right;
+    margin-right:3em;
+
+  }
+  .navbar .right-buttons .dropbtn{
+   padding-right:20px;
+   font-size: 12px;
+    border: none;
+    outline: none;
+    color:  hsl(0, 0%, 41%);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: 700;
+    font-family: Epilogue; /* Important for vertical align on mobile phones */
+    margin-right: 2em;
+    cursor: pointer;
+    display: none;
+  }
+
+  .navbar .right-buttons .bordered-button{
+    cursor: pointer;
+    padding-right:20px;
+    font-size: 12px;
+     border: none;
+     outline: none;
+     color:  hsl(0, 0%, 41%);
+     padding: 7px 15px;
+     background-color: inherit;
+     font-weight: 700;
+     font-family: Epilogue; /* Important for vertical align on mobile phones */
+     margin-top: 7px;
+     border: 0.5px solid  hsl(0, 0%, 41%);
+     border-radius: 10px;
+     height: fit-content;
+     width: max-content;
+     display: none;
+ 
+   }
+   .navbar .right-buttons .icon{
+    max-width: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+    color:  hsl(0, 0%, 41%);
+    font-size: 25px;
+    mix-blend-mode: difference;
+    line-height: 20px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+   }
+
+
+
+
+   .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+}
+
+/* Navbar container */
